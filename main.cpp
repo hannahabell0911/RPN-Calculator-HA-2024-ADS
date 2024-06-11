@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Test first commit!" << std::endl;
+    std::cout << "Test second commit!" << std::endl;
     return 0;
 }
