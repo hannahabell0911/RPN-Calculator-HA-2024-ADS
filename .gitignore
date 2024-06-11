@@ -1,0 +1,8 @@
+# Exclude build files and directories
+/cmake-build-debug/
+*.o
+*.obj
+*.exe
+*.log
+^X
+
