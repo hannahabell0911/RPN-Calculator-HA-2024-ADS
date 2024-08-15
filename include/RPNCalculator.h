@@ -16,7 +16,7 @@ public:
         performOperation(std::plus<T>());
     }
 
-    void subtract() {
+    void subtracts() {
         performOperation(std::minus<T>());
     }
 
