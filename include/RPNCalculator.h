@@ -2,11 +2,24 @@
 #pragma once
 #include "Stack.h"
 #include <functional>
+#include <fstream>
+#include <iostream>
+#include <string>
 
 template<typename T>
 class RPNCalculator {
 private:
     Stack<T> stack;
+
+    void logOperation(const std::string& operation, T operand1, T operand2, T result) {
+        std::ofstream logFile("RPN.log", std::ios::app);  // Append mode
+        if (!logFile) {
+            std::cerr << "Error: Unable to open log file." << std::endl;
+            return;
+        }
+        logFile << operation << " (" << operand1 << ", " << operand2 << ") = " << result << std::endl;
+        logFile.close();
+    }
 
 public:
     void push(T value) {
@@ -14,19 +27,19 @@ public:
     }
 
     void add() {
-        performOperation(std::plus<T>());
+        performOperation(std::plus<T>(), "+");
     }
 
     void subtract() {
-        performOperation(std::minus<T>());
+        performOperation(std::minus<T>(), "-");
     }
 
     void multiply() {
-        performOperation(std::multiplies<T>());
+        performOperation(std::multiplies<T>(), "*");
     }
 
     void divide() {
-        performOperation(std::divides<T>());
+        performOperation(std::divides<T>(), "/");
     }
 
     T top() const {
@@ -35,10 +48,10 @@ public:
         }
         return stack.top();
     }
+
     void clear() {
         stack.clear();
     }
-
 
     bool isEmpty() const {
         return stack.isEmpty();
@@ -46,13 +59,14 @@ public:
 
 private:
     template<typename Op>
-    void performOperation(Op op) {
+    void performOperation(Op op, const std::string& opSymbol) {
         if (stack.size() < 2) {
-            throw std::runtime_error("Insufficient operands");
+            throw std::runtime_error("Insufficient operands for operation");
         }
         T rhs = stack.pop();
         T lhs = stack.pop();
-        stack.push(op(lhs, rhs));
+        T result = op(lhs, rhs);
+        stack.push(result);
+        logOperation(opSymbol, lhs, rhs, result);
     }
-
 };
