@@ -27,4 +27,26 @@ TEST_F(IntCalculatorTest, HandlesSubtraction) {
     calculator.subtract();
     EXPECT_EQ(calculator.top(), 6);
 }
+TEST_F(IntCalculatorTest, HandlesMultiplication) {
+    calculator.push(7);
+    calculator.push(6);
+    calculator.multiply();
+    EXPECT_EQ(calculator.top(), 42);
+}
 
+TEST_F(IntCalculatorTest, HandlesDivision) {
+    calculator.push(8);
+    calculator.push(2);
+    calculator.divide();
+    EXPECT_EQ(calculator.top(), 4);
+}
+
+TEST_F(IntCalculatorTest, HandlesDivideByZero) {
+    calculator.push(10);
+    calculator.push(0);
+    EXPECT_THROW(calculator.divide(), std::domain_error);
+}
+void ClearLogFile() {
+    std::ofstream ofs("RPN.log", std::ofstream::out | std::ofstream::trunc);
+    ofs.close();
+}
