@@ -1,0 +1,25 @@
+# ninja log v6
+756	1070	1723980734900496148	/Users/hannahabell/Downloads/RPNCalculator-HA-2024/cmake-build-debug/my_test[1]_tests.cmake	c6bc5d589019397
+756	1070	1723980734900496148	my_test[1]_tests.cmake	c6bc5d589019397
+10	968	1723980247366007114	CMakeFiles/main_app.dir/src/main.cpp.o	dda009483ede9245
+756	1070	1723980734900496148	my_test	c6bc5d589019397
+1799	1817	1723980423554090518	lib/libgtest_maind.a	f90a32413b14fddb
+4	967	1723980421759511281	CMakeFiles/my_test.dir/tests/stack_test.cpp.o	760d9bfe5f299fc8
+1688	1799	1723980423443189131	lib/libgtestd.a	66bc469ad9e163d8
+3	1688	1723980421758430221	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	82858a4b7e46bcd1
+4	868	1723980421759221173	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	be4d31596db59aff
+968	1079	1723980248324184996	main_app	7df5d93bf43f53d8
+7	756	1723980733837038907	CMakeFiles/my_test.dir/tests/RPNCalculator_test.cpp.o	54b4524bd592bb19
+2	152	1723978795556912588	CMakeFiles/main_app.dir/src/RPNCalculator.cpp.o	df617955b44901f2
+10	278	1724007726435716977	build.ninja	dda6d9a7d0c12fe9
+12	872	1724007726457210491	CMakeFiles/my_test.dir/tests/stack_test.cpp.o	760d9bfe5f299fc8
+12	896	1724007726456882464	CMakeFiles/my_test.dir/tests/RPNCalculator_test.cpp.o	54b4524bd592bb19
+896	1363	1724007727807723395	my_test	c6bc5d589019397
+896	1363	1724007727807723395	my_test[1]_tests.cmake	c6bc5d589019397
+896	1363	1724007727807723395	/Users/hannahabell/Downloads/RPNCalculator-HA-2024/cmake-build-debug/my_test[1]_tests.cmake	c6bc5d589019397
+12	808	1724008336815853009	CMakeFiles/my_test.dir/tests/RPNCalculator_test.cpp.o	54b4524bd592bb19
+808	1192	1724008337994741976	my_test	c6bc5d589019397
+808	1192	1724008337994741976	my_test[1]_tests.cmake	c6bc5d589019397
+808	1192	1724008337994741976	/Users/hannahabell/Downloads/RPNCalculator-HA-2024/cmake-build-debug/my_test[1]_tests.cmake	c6bc5d589019397
+11	1166	1724008577535259376	CMakeFiles/main_app.dir/src/main.cpp.o	dda009483ede9245
+1166	1281	1724008578690109771	main_app	7df5d93bf43f53d8

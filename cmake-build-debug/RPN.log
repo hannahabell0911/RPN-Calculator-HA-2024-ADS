@@ -1,0 +1,15 @@
++ (4, 5) = 9
+- (9, 3) = 6
+* (6, 5) = 30
+/ (30, 3) = 10
+/ (10, 0) = inf
+/ (10, 0) = 0
+Attempt to divide by zero.
+Attempt to divide by zero.
+* (7, 6) = 42
+Attempt to divide by zero.
+* (6, 2) = 12
+/ (40, 5) = 8
+square (2, 2) = 4
+square (9, 9) = 81
+Attempt to divide by zero.

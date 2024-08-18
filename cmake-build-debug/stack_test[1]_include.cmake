@@ -1,0 +1,5 @@
+if(EXISTS "/Users/hannahabell/Downloads/RPNCalculator-HA-2024/cmake-build-debug/stack_test[1]_tests.cmake")
+  include("/Users/hannahabell/Downloads/RPNCalculator-HA-2024/cmake-build-debug/stack_test[1]_tests.cmake")
+else()
+  add_test(stack_test_NOT_BUILT stack_test_NOT_BUILT)
+endif()
