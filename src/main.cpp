@@ -7,6 +7,7 @@
 bool isNumber(const std::string& input) {
     return std::regex_match(input, std::regex(R"(^-?\d+(\.\d+)?$)")); // https://stackoverflow.com/questions/12643009/regular-expression-for-floating-point-numbers
 }
+//https://gist.github.com/dvtate/19d1b67bd454073bf8c7d70b3e3cc79e
 int main() {
     RPNCalculator<double> calculator;
     std::string input;

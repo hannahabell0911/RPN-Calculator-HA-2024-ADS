@@ -13,7 +13,7 @@ private:
     Stack<T> stack;
 
     void logOperation(const std::string& operation, T operand1, T operand2, T result) {
-        std::ofstream logFile("RPN.log", std::ios::app);  // Append mode
+        std::ofstream logFile("RPN.log", std::ios::app); // https://www.geeksforgeeks.org/logging-system-in-cpp/
         if (!logFile) {
             std::cerr << "Error: Unable to open log file." << std::endl;
             return;
