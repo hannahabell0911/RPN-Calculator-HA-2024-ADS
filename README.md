@@ -1,6 +1,11 @@
 # RPN-Calculator-HA-2024-ADS
 My ADS repeat assignment
 Completed by Hannah Abell, student number: D00249620
+## Github repo link
+https://github.com/hannahabell0911/RPN-Calculator-HA-2024-ADS
+## Youtube video link
+https://youtu.be/yqo5AOk9wbA?si=MCDHGLcyipRG8arF
+![image](https://github.com/user-attachments/assets/3a845b38-5955-4747-b988-b08b6c98650d)
 
 ## Project Introduction
 The RPNCalculator is a Reverse Polish Notation (RPN) calculator implemented in C++, that utilizes a stack-based approach to perform arithmetic operations. This project was designed to demonstrate an ability in applying advanced C++ techniques, including templates, exception handling, and unit testing.
@@ -34,6 +39,8 @@ This project uses Google Test for unit testing. To run the tests, compile the te
 - Setting up and tested unit testing by following this tutorial: https://www.youtube.com/watch?v=FEFpabSn-Yo watched August 11th 2024
 - Chatgpt used for help problem solving errors easily.
 - RPNCalculator Interface- inspiration + help found here https://gist.github.com/dvtate/19d1b67bd454073bf8c7d70b3e3cc79e 
+
+
 
 
 
