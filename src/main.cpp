@@ -1,23 +1,53 @@
+#include "RPNCalculator.h"
 #include <iostream>
 #include <string>
-#include "../include/RPNCalculator.h"
+#include <cctype>
+#include <regex>
 
+bool isNumber(const std::string& input) {
+    return std::regex_match(input, std::regex(R"(^-?\d+(\.\d+)?$)")); // https://stackoverflow.com/questions/12643009/regular-expression-for-floating-point-numbers
+}
 int main() {
     RPNCalculator<double> calculator;
+    std::string input;
+    std::cout << "RPN Calculator. Enter 'q' to exit.\n";
 
-    calculator.push(5);
-    calculator.push(3);
+    while (true) {
+        std::cout << "Enter command or value: ";
+        std::cin >> input;
 
-    calculator.add();
+        if (input == "q") {
+            break;
+        } else if (isNumber(input)) {
+            calculator.push(std::stod(input));
+        } else {
+            if (input == "+") {
+                calculator.add();
+            } else if (input == "-") {
+                calculator.subtract();
+            } else if (input == "*") {
+                calculator.multiply();
+            } else if (input == "/") {
+                calculator.divide();
+            } else if (input == "s") {
+                calculator.square();
+            } else if (input == "n") {
+                calculator.negate();
+            } else if (input == "c") {
+                calculator.clear();
+            } else if (input == "p") {
+                calculator.pop();
+            } else {
+                std::cout << "Invalid command.\n";
+            }
+        }
 
-    std::cout << "Result of 5 + 3: " << calculator.top() << std::endl;
-
-    calculator.push(2);
-    calculator.multiply();  // (5 + 3) * 2
-
-    std::cout << "Final result (8 * 2): " << calculator.top() << std::endl;
-
-    std::cout << "Is the calculator empty? " << (calculator.isEmpty() ? "Yes" : "No") << std::endl;
+        if (!calculator.isEmpty()) {
+            std::cout << "Top of stack: " << calculator.top() << "\n";
+        } else {
+            std::cout << "Stack is empty.\n";
+        }
+    }
 
     return 0;
 }
