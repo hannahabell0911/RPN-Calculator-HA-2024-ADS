@@ -52,4 +52,9 @@ TEST_F(IntCalculatorTest, HandlesDivisionByZero) {
     EXPECT_EQ(calculator.pop(), 0);
     EXPECT_EQ(calculator.pop(), 10);
 }
-
+TEST_F(IntCalculatorTest, PopOnEmptyDoesNotThrow) {
+    EXPECT_NO_THROW({
+                        double result = calculator.pop(); // Should return default-constructed double, which is 0.0
+                        EXPECT_DOUBLE_EQ(result, 0.0);    // Check if the returned value is 0.0, indicating a default double
+                    });
+}

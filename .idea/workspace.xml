@@ -28,8 +28,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f06ae56-9ce2-4973-b3b0-7a0b2afde405" name="Changes" comment="Complete Implementation and Refinement of RPNCalculator">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main_app.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main_app.dir/src/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/my_test.dir/tests/RPNCalculator_test.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/my_test.dir/tests/RPNCalculator_test.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/my_test.dir/tests/stack_test.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/my_test.dir/tests/stack_test.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/RPN.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/RPN.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main_app" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/main_app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/my_test" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/my_test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/my_test[1]_tests.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/my_test[1]_tests.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/RPNCalculator.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/RPNCalculator.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/RPNCalculator_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/RPNCalculator_test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/stack_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/stack_test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +76,7 @@
     "Google Test.IntCalculatorTest.HandlesDivideByZero.executor": "Run",
     "Google Test.IntCalculatorTest.HandlesDivisionByZero.executor": "Run",
     "Google Test.IntCalculatorTest.HandlesMultiplication.executor": "Run",
+    "Google Test.IntCalculatorTest.PopOnEmptyDoesNotThrow.executor": "Run",
     "Google Test.StackTest.ClearStack.executor": "Run",
     "Google Test.StackTest.SizeOfStack.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -88,12 +101,6 @@
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntCalculatorTest.HandlesDivideByZero" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RPNCalculator_HA_2024" TARGET_NAME="my_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RPNCalculator_HA_2024" RUN_TARGET_NAME="my_test" TEST_CLASS="IntCalculatorTest" TEST_METHOD="HandlesDivideByZero" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IntCalculatorTest.HandlesDivisionByZero" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RPNCalculator_HA_2024" TARGET_NAME="my_test" RUN_TARGET_PROJECT_NAME="RPNCalculator_HA_2024" RUN_TARGET_NAME="my_test" TEST_CLASS="IntCalculatorTest" TEST_METHOD="HandlesDivisionByZero" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -101,6 +108,12 @@
       </method>
     </configuration>
     <configuration name="IntCalculatorTest.HandlesMultiplication" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RPNCalculator_HA_2024" TARGET_NAME="my_test" RUN_TARGET_PROJECT_NAME="RPNCalculator_HA_2024" RUN_TARGET_NAME="my_test" TEST_CLASS="IntCalculatorTest" TEST_METHOD="HandlesMultiplication" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntCalculatorTest.PopOnEmptyDoesNotThrow" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RPNCalculator_HA_2024" TARGET_NAME="my_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RPNCalculator_HA_2024" RUN_TARGET_NAME="my_test" TEST_CLASS="IntCalculatorTest" TEST_METHOD="PopOnEmptyDoesNotThrow" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -176,19 +189,19 @@
       <item itemvalue="CTest Application.All CTest" />
       <item itemvalue="Google Test.my_test" />
       <item itemvalue="Google Test.stack_test" />
-      <item itemvalue="Google Test.IntCalculatorTest.HandlesDivideByZero" />
       <item itemvalue="Google Test.IntCalculatorTest.HandlesDivisionByZero" />
       <item itemvalue="Google Test.IntCalculatorTest.HandlesMultiplication" />
+      <item itemvalue="Google Test.IntCalculatorTest.PopOnEmptyDoesNotThrow" />
       <item itemvalue="Google Test.StackTest.ClearStack" />
       <item itemvalue="Google Test.StackTest.SizeOfStack" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.IntCalculatorTest.PopOnEmptyDoesNotThrow" />
         <item itemvalue="Google Test.IntCalculatorTest.HandlesDivisionByZero" />
         <item itemvalue="Google Test.IntCalculatorTest.HandlesMultiplication" />
         <item itemvalue="Google Test.StackTest.SizeOfStack" />
         <item itemvalue="Google Test.StackTest.ClearStack" />
-        <item itemvalue="Google Test.IntCalculatorTest.HandlesDivideByZero" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +213,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723978565527</updated>
-      <workItem from="1723978566641" duration="8433000" />
+      <workItem from="1723978566641" duration="11600000" />
     </task>
     <task id="LOCAL-00001" summary="Added square and negate operations; updated error handling in RPNCalculator">
       <option name="closed" value="true" />
@@ -234,7 +247,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724001526872</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Complete Implementation and Refinement of RPNCalculator">
+      <option name="closed" value="true" />
+      <created>1724009826063</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724009826063</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Complete Implementation and Refinement of RPNCalculator">
+      <option name="closed" value="true" />
+      <created>1724009835669</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724009835669</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,5 +291,16 @@
     <MESSAGE value="Added a basic command interface" />
     <MESSAGE value="Complete Implementation and Refinement of RPNCalculator" />
     <option name="LAST_COMMIT_MESSAGE" value="Complete Implementation and Refinement of RPNCalculator" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.cpp</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

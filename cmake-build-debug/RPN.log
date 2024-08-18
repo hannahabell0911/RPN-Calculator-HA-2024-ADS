@@ -13,3 +13,18 @@ Attempt to divide by zero.
 square (2, 2) = 4
 square (9, 9) = 81
 Attempt to divide by zero.
+/ (3, 2) = 1.5
+* (1e+23, 1e+16) = 1e+39
++ (1e+39, 4) = 1e+39
+Not enough operands.
++ (2, 4) = 6
++ (2, 3) = 5
+/ (3, 4) = 0.75
+square (3, 3) = 9
+negate (4, 4) = -4
+/ (-4, 3) = -1.33333
++ (2, 4) = 6
+/ (6, 3) = 2
+/ (2, 6) = 0.333333
+square (2, 2) = 4
+negate (4, 4) = -4

@@ -13,7 +13,7 @@ private:
     Stack<T> stack;
 
     void logOperation(const std::string& operation, T operand1, T operand2, T result) {
-        std::ofstream logFile("RPN.log", std::ios::app); // https://www.geeksforgeeks.org/logging-system-in-cpp/
+        std::ofstream logFile("RPN.log", std::ios::app);  // Append mode for logging operations
         if (!logFile) {
             std::cerr << "Error: Unable to open log file." << std::endl;
             return;
@@ -22,8 +22,8 @@ private:
         logFile.close();
     }
 
-    void logError (const std::string& errorMsg) {
-        std::ofstream logFile("RPN.log", std::ios::app);
+    void logError(const std::string& errorMsg) {
+        std::ofstream logFile("RPN.log", std::ios::app);  // Append mode for logging errors
         if (!logFile) {
             std::cerr << "Error: Unable to open log file." << std::endl;
             return;
@@ -33,6 +33,11 @@ private:
     }
 
 public:
+
+    size_t stackSize() const {
+        return stack.size();
+    }
+
     void push(T value) {
         stack.push(value);
     }
@@ -55,9 +60,8 @@ public:
 
     void square() {
         if (stack.isEmpty()) {
-            std::string errorMsg = "Not enough operands.";
-            logError(errorMsg);
-            std::cout << errorMsg << std::endl;
+            logError("Not enough operands.");
+            std::cout << "Not enough operands." << std::endl;
             return;
         }
 
@@ -69,9 +73,8 @@ public:
 
     void negate() {
         if (stack.isEmpty()) {
-            std::string errorMsg = "Not enough operands.";
-            logError(errorMsg);
-            std::cout << errorMsg << std::endl;
+            logError("Not enough operands.");
+            std::cout << "Not enough operands." << std::endl;
             return;
         }
         T value = stack.pop();
@@ -89,9 +92,8 @@ public:
 
     T pop() {
         if (stack.isEmpty()) {
-            std::string errorMsg = "Not enough operands.";
-            logError(errorMsg);
-            std::cout << errorMsg << std::endl;
+            logError("Not enough operands.");
+            std::cout << "Not enough operands." << std::endl;
             return T();
         }
 
@@ -112,21 +114,16 @@ private:
     template<typename Op>
     void performOperation(Op op, const std::string& opSymbol) {
         if (stack.size() < 2) {
-            std::string errorMsg = "Insufficient operands for operation " + opSymbol;
-            logError(errorMsg);
-            std::cout << errorMsg << std::endl;
+            logError("Insufficient operands for operation " + opSymbol);
+            std::cout << "Insufficient operands for operation " + opSymbol << std::endl;
             return;
         }
         T rhs = stack.pop();
         T lhs = stack.pop();
 
-        // Special handling for division to prevent division by zero
         if (opSymbol == "/" && rhs == 0) {
-            std::string errorMsg = "Attempt to divide by zero.";
-            logError(errorMsg);
-            std::cout << errorMsg << std::endl;
-
-            // Optionally, push the operands back on the stack if needed
+            logError("Attempt to divide by zero.");
+            std::cout << "Attempt to divide by zero." << std::endl;
             stack.push(lhs);
             stack.push(rhs);
             return;

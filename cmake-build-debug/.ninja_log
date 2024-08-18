@@ -23,3 +23,16 @@
 808	1192	1724008337994741976	/Users/hannahabell/Downloads/RPNCalculator-HA-2024/cmake-build-debug/my_test[1]_tests.cmake	c6bc5d589019397
 11	1166	1724008577535259376	CMakeFiles/main_app.dir/src/main.cpp.o	dda009483ede9245
 1166	1281	1724008578690109771	main_app	7df5d93bf43f53d8
+5	992	1724011108851330165	CMakeFiles/main_app.dir/src/main.cpp.o	dda009483ede9245
+993	1122	1724011109840177439	main_app	7df5d93bf43f53d8
+14	857	1724011294468819525	CMakeFiles/my_test.dir/tests/stack_test.cpp.o	760d9bfe5f299fc8
+14	875	1724011294468298748	CMakeFiles/my_test.dir/tests/RPNCalculator_test.cpp.o	54b4524bd592bb19
+875	1231	1724011295684460040	my_test	c6bc5d589019397
+875	1231	1724011295684460040	my_test[1]_tests.cmake	c6bc5d589019397
+875	1231	1724011295684460040	/Users/hannahabell/Downloads/RPNCalculator-HA-2024/cmake-build-debug/my_test[1]_tests.cmake	c6bc5d589019397
+5	1053	1724011552248007020	CMakeFiles/main_app.dir/src/main.cpp.o	dda009483ede9245
+1053	1155	1724011553296599101	main_app	7df5d93bf43f53d8
+4	869	1724012251099740285	CMakeFiles/main_app.dir/src/main.cpp.o	dda009483ede9245
+869	984	1724012251964516051	main_app	7df5d93bf43f53d8
+10	1018	1724012564482177642	CMakeFiles/main_app.dir/src/main.cpp.o	dda009483ede9245
+1018	1128	1724012565490403413	main_app	7df5d93bf43f53d8

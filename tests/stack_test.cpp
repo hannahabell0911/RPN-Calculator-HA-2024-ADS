@@ -8,7 +8,6 @@ class StackTest : public ::testing::Test {
 protected:
     Stack<int> stack;
 };
-
 TEST_F(StackTest, PushAndPopSingle) {
     stack.push(1);
     ASSERT_EQ(stack.pop(), 1);
