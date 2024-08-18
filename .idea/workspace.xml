@@ -27,23 +27,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f06ae56-9ce2-4973-b3b0-7a0b2afde405" name="Changes" comment="Complete Implementation and Refinement of RPNCalculator">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main_app.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main_app.dir/src/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/my_test.dir/tests/RPNCalculator_test.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/my_test.dir/tests/RPNCalculator_test.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/my_test.dir/tests/stack_test.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/my_test.dir/tests/stack_test.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/RPN.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/RPN.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main_app" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/main_app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/my_test" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/my_test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/my_test[1]_tests.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/my_test[1]_tests.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/RPNCalculator.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/RPNCalculator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/RPNCalculator_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/RPNCalculator_test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/stack_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/stack_test.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="4f06ae56-9ce2-4973-b3b0-7a0b2afde405" name="Changes" comment="Complete Implementation and Refinement of RPNCalculator" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -213,7 +197,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723978565527</updated>
-      <workItem from="1723978566641" duration="11600000" />
+      <workItem from="1723978566641" duration="12307000" />
     </task>
     <task id="LOCAL-00001" summary="Added square and negate operations; updated error handling in RPNCalculator">
       <option name="closed" value="true" />
@@ -263,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724009835669</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Complete Implementation and Refinement of RPNCalculator">
+      <option name="closed" value="true" />
+      <created>1724013726041</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724013726042</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
