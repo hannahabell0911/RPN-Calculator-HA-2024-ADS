@@ -19,7 +19,7 @@ The RPNCalculator is a Reverse Polish Notation (RPN) calculator implemented in C
 ## Usage
 After running the calculator, you will be prompted to enter commands or numbers. Here is how you can use it:
 - To perform operations: Enter the numbers followed by the operation symbol (`+`, `-`, `*`, `/`). For example, to add 10 and 20, input: 10 20 +
-- - To square a number: Enter the number followed by `s`.
+- To square a number: Enter the number followed by `s`.
 - To negate a number: Enter the number followed by `n`.
 - To clear the stack: Enter `c`.
 - To quit the program: Enter `q`.
@@ -28,10 +28,10 @@ After running the calculator, you will be prompted to enter commands or numbers.
 This project uses Google Test for unit testing. To run the tests, compile the test suite and execute.
 
 ## Acknowledgments & References
--For info on logging: https://www.geeksforgeeks.org/logging-system-in-cpp/ accessed 14th August 2024
--For help with functions I found this helpful video: https://www.youtube.com/watch?v=zla7ha0OORM watched 14th August 2024
--This Stack implementation is inspired by an example found on the site GeeksforGeeks. https://www.geeksforgeeks.org/stack-data-structure-introduction-program/ accessed June 11th, 2024
--Setting up and tested unit testing by following this tutorial: https://www.youtube.com/watch?v=FEFpabSn-Yo watched August 11th 2024
+- For info on logging: https://www.geeksforgeeks.org/logging-system-in-cpp/ accessed 14th August 2024
+- For help with functions I found this helpful video: https://www.youtube.com/watch?v=zla7ha0OORM watched 14th August 2024
+- This Stack implementation is inspired by an example found on the site GeeksforGeeks. https://www.geeksforgeeks.org/stack-data-structure-introduction-program/ accessed June 11th, 2024
+- Setting up and tested unit testing by following this tutorial: https://www.youtube.com/watch?v=FEFpabSn-Yo watched August 11th 2024
 - Chatgpt used for help problem solving errors easily.
 - RPNCalculator Interface- inspiration + help found here https://gist.github.com/dvtate/19d1b67bd454073bf8c7d70b3e3cc79e 
 
