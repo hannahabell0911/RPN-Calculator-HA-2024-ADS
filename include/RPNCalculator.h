@@ -21,6 +21,16 @@ private:
         logFile.close();
     }
 
+    void logError (const std::string& errorMsg) {
+        std::ofstream logFile("RPN.log", std::ios::app);
+        if (!logFile) {
+            std::cerr << "Error: Unable to open log file." << std::endl;
+            return;
+        }
+        logFile << errorMsg << std::endl;
+        logFile.close();
+    }
+
 public:
     void push(T value) {
         stack.push(value);
@@ -42,11 +52,51 @@ public:
         performOperation(std::divides<T>(), "/");
     }
 
+    void square() {
+        if (stack.isEmpty()) {
+            std::string errorMsg = "Not enough operands.";
+            logError(errorMsg);
+            std::cout << errorMsg << std::endl;
+            return;
+        }
+
+        T value = stack.pop();
+        T result = value * value;
+        stack.push(result);
+        logOperation("square", value, value, result);
+    }
+
+    void negate() {
+        if (stack.isEmpty()) {
+            std::string errorMsg = "Not enough operands.";
+            logError(errorMsg);
+            std::cout << errorMsg << std::endl;
+            return;
+        }
+        T value = stack.pop();
+        T result = value * -1;
+        stack.push(result);
+        logOperation("negate", value, value, result);
+    }
+
     T top() const {
         if (isEmpty()) {
             throw std::out_of_range("Stack is empty");
         }
         return stack.top();
+    }
+
+    T pop() {
+        if (stack.isEmpty()) {
+            std::string errorMsg = "Not enough operands.";
+            logError(errorMsg);
+            std::cout << errorMsg << std::endl;
+            return T();
+        }
+
+        T top = stack.top();
+        stack.pop();
+        return top;
     }
 
     void clear() {
@@ -60,8 +110,15 @@ public:
 private:
     template<typename Op>
     void performOperation(Op op, const std::string& opSymbol) {
-        if (stack.size() < 2) {
-            throw std::runtime_error("Insufficient operands for operation");
+        if (stack.size() == 1) {
+            stack.pop();
+            return;
+        }
+        if (stack.size() < 1) {
+            std::string errorMsg = "Not enough operands.";
+            logError(errorMsg);
+            std::cout << errorMsg << std::endl;
+            return;
         }
         T rhs = stack.pop();
         T lhs = stack.pop();
