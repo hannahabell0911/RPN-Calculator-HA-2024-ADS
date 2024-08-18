@@ -46,7 +46,4 @@ TEST_F(IntCalculatorTest, HandlesDivideByZero) {
     calculator.push(0);
     EXPECT_THROW(calculator.divide(), std::domain_error);
 }
-void ClearLogFile() {
-    std::ofstream ofs("RPN.log", std::ofstream::out | std::ofstream::trunc);
-    ofs.close();
-}
+
