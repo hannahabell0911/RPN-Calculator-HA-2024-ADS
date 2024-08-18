@@ -1,14 +1,16 @@
 //
 // Created by Hannah Abell on 31/07/2024.
 //
+// This Stack implementation is inspired by an example found on the site GeeksforGeeks.
+// Source: https://www.geeksforgeeks.org/stack-data-structure-introduction-program/
+// Accessed on: June 11th, 2024
+// Modifications were made to tailor it to the specific needs of this project.
 
 #ifndef RPNCALCULATOR_HA_2024_STACK_H
 #define RPNCALCULATOR_HA_2024_STACK_H
 
 #endif //RPNCALCULATOR_HA_2024_STACK_H
-// Stack.h
 #pragma once
-
 #include <vector>
 #include <stdexcept>
 

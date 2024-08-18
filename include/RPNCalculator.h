@@ -5,7 +5,8 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-
+// for info on logging https://www.geeksforgeeks.org/logging-system-in-cpp/ accessed 14th August 2024
+// for help with functions I found this helpful video https://www.youtube.com/watch?v=zla7ha0OORM watched 14th August 2024
 template<typename T>
 class RPNCalculator {
 private:
@@ -110,18 +111,27 @@ public:
 private:
     template<typename Op>
     void performOperation(Op op, const std::string& opSymbol) {
-        if (stack.size() == 1) {
-            stack.pop();
-            return;
-        }
-        if (stack.size() < 1) {
-            std::string errorMsg = "Not enough operands.";
+        if (stack.size() < 2) {
+            std::string errorMsg = "Insufficient operands for operation " + opSymbol;
             logError(errorMsg);
             std::cout << errorMsg << std::endl;
             return;
         }
         T rhs = stack.pop();
         T lhs = stack.pop();
+
+        // Special handling for division to prevent division by zero
+        if (opSymbol == "/" && rhs == 0) {
+            std::string errorMsg = "Attempt to divide by zero.";
+            logError(errorMsg);
+            std::cout << errorMsg << std::endl;
+
+            // Optionally, push the operands back on the stack if needed
+            stack.push(lhs);
+            stack.push(rhs);
+            return;
+        }
+
         T result = op(lhs, rhs);
         stack.push(result);
         logOperation(opSymbol, lhs, rhs, result);

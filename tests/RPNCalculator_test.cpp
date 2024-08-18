@@ -1,6 +1,6 @@
 //
 // Created by Hannah Abell on 17/08/2024.
-//
+//Setting up and tested unit testing by following this tutorial https://www.youtube.com/watch?v=FEFpabSn-Yo and used chatgpt to help me problem solve division by zero test
 #include <gtest/gtest.h>
 #include "RPNCalculator.h"
 
@@ -41,9 +41,15 @@ TEST_F(IntCalculatorTest, HandlesDivision) {
     EXPECT_EQ(calculator.top(), 4);
 }
 
-TEST_F(IntCalculatorTest, HandlesDivideByZero) {
+TEST_F(IntCalculatorTest, HandlesDivisionByZero) {
     calculator.push(10);
     calculator.push(0);
-    EXPECT_THROW(calculator.divide(), std::domain_error);
+
+    calculator.divide();
+
+    EXPECT_FALSE(calculator.isEmpty());
+    EXPECT_EQ(calculator.top(), 0);
+    EXPECT_EQ(calculator.pop(), 0);
+    EXPECT_EQ(calculator.pop(), 10);
 }
 
