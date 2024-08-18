@@ -3,7 +3,7 @@
 #include <string>
 #include <cctype>
 #include <regex>
-
+//-For help with functions I found this helpful video: https://www.youtube.com/watch?v=zla7ha0OORM watched 14th August 2024
 
 bool isNumber(const std::string& input) {
     return std::regex_match(input, std::regex(R"(^-?\d+(\.\d+)?$)")); // Regex for matching numbers
